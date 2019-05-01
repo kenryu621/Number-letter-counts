@@ -99,7 +99,7 @@ function convert(num) {
         toLetter += 'Eighty ';
         convert(num.substr(1, num.length - 1));
       } else if (num.startsWith(9)) {
-        toLetter += 'Ninty ';
+        toLetter += 'Ninety ';
         convert(num.substr(1, num.length - 1));
       } else if (num.startsWith(0)) {
         toLetter += '';

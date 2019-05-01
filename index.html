@@ -10,9 +10,11 @@
 </head>
 
 <body>
+  <label for="firstNum">First Number</label>
   <input type="number" id="firstNum" max="1000">
+  <label for="secondNum">Second Number</label>
   <input type="number" id="secondNum" max="1000">
-  <button onclick="spawnNumber(Math.floor(document.getElementById('firstNum').value), Math.floor(document.getElementById('secondNum').value))">Number Letter Counts</button>
+  <button onclick=" spawnNumber(Math.floor(document.getElementById('firstNum').value), Math.floor(document.getElementById('secondNum').value))">Number Letter Counts</button>
   <h1>All number</h1>
   <h3 id="allNum"></h3>
   <h1>All number in words</h1>

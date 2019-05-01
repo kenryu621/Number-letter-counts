@@ -2,6 +2,8 @@ function spawnNumber(firstNum, secondNum) {
   var arrayNum = [];
   if (secondNum < firstNum) {
     document.getElementById('allNum').innerHTML = 'Second number should larger than first number.';
+    document.getElementById('allWord').innerHTML = '';
+    document.getElementById('result').innerHTML = '';
     return;
   } else {
     for (var i = firstNum; i <= secondNum; i++) {

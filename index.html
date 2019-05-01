@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="js/master.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <input type="number" id="firstNum" max="1000">
+  <input type="number" id="secondNum" max="1000">
+  <button onclick="spawnNumber(Math.floor(document.getElementById('firstNum').value), Math.floor(document.getElementById('secondNum').value))">Number Letter Counts</button>
+  <h1>All number</h1>
+  <h3 id="allNum"></h3>
+  <h1>All number in words</h1>
+  <h3 id="allWord"></h3>
+  <h1>Result</h1>
+  <h3 id="result"></h3>
+</body>
+
+</html>

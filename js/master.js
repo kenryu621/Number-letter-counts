@@ -1,16 +1,16 @@
 function spawnNumber(firstNum, secondNum) {
   var arrayNum = [];
   if (secondNum < firstNum) {
-    document.getElementById('allNum').innerHTML = 'Second number should larger than first number.';
-    document.getElementById('allWord').innerHTML = '';
-    document.getElementById('result').innerHTML = '';
+    gEBI('allNum').innerHTML = 'Second number should larger than first number.';
+    gEBI('allWord').innerHTML = '';
+    gEBI('result').innerHTML = '';
     return;
   } else {
     for (var i = firstNum; i <= secondNum; i++) {
       arrayNum.push(i);
     }
   }
-  document.getElementById('allNum').innerHTML = arrayNum;
+  gEBI('allNum').innerHTML = arrayNum;
   numberToLetter(arrayNum);
 }
 
@@ -20,7 +20,7 @@ function numberToLetter(array) {
     arrayLetter.push(convert(array[i].toString()));
     toLetter = '';
   }
-  document.getElementById('allWord').innerHTML = arrayLetter;
+  gEBI('allWord').innerHTML = arrayLetter;
   letterCount(arrayLetter);
 }
 
@@ -136,5 +136,9 @@ function convert(num) {
 
 function letterCount(array) {
   var letterString = array.join('').replace(/\s+/g, '');
-  document.getElementById('result').innerHTML = letterString.length;
+  gEBI('result').innerHTML = letterString.length;
+}
+
+function gEBI(id) {
+  return document.getElementById(id);
 }
